@@ -9,7 +9,7 @@ def project_index(request):
     }
     return render(request, 'project_index.html', context)
 
-def project_details(request, pk):
+def project_detail(request, pk):
     project = Project.objects.all()
     context = {
         'project': project
